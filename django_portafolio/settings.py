@@ -128,7 +128,7 @@ if not DEBUG:
 #     BASE_DIR / "media"
 # )  # create a new general dir media that contain every app image
 if not DEBUG:
-    MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+    MEDIA_ROOT = os.path.join(BASE_DIR, "staticfiles", "media")
 
 MEDIA_URL = "/media/"
 
