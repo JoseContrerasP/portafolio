@@ -124,9 +124,11 @@ if not DEBUG:
     # and creating unique names for each version so they can safely be cached forever.
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-MEDIA_ROOT = (
-    BASE_DIR / "media"
-)  # create a new general dir media that contain every app image
+# MEDIA_ROOT = (
+#     BASE_DIR / "media"
+# )  # create a new general dir media that contain every app image
+if not DEBUG:
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 MEDIA_URL = "/media/"
 
