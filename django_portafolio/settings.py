@@ -122,21 +122,20 @@ if not DEBUG:
     # and creating unique names for each version so they can safely be cached forever.
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+STATICFILES_DIRS = [
+    os.path.join(
+        BASE_DIR,
+        "static",
+    )
+]
+
 # MEDIA_ROOT = (
 #     BASE_DIR / "media"
 # )  # create a new general dir media that contain every app image
-if not DEBUG:
-    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = "/media/"
 
-# STATICFILES_DIRS = [
-#     os.path.join(
-#         BASE_DIR,
-#         "static",
-#     ),
-#     os.path.join(BASE_DIR, "/opt/render/project/src/media"),
-# ]
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
