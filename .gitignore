@@ -171,3 +171,5 @@ city/photos/
 
 # futures upgrades
 upgrades.txt
+
+django_portafolio/settings_local.py

@@ -6,23 +6,24 @@
 
 <header class="row bg-black">
 	<div class="col-md-4">
-		<img src="{% static 'portafolio/images.jfif' %}" alt="">
+		<img src="{% static 'portafolio/jose_ft.jpeg' %}" alt="">
 	</div>
 
 	<div class="col-md-8 my-auto">
-		<h1>I am <strong>Ryan Ray</strong></h1>
+		<h1><strong>Jose Contreras</strong></h1>
 		<h3>I am a Python FullStack Developer</h3>
+		<h3>Soy un Python Back-end Developer</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt ex nec feugiat auctor. Praesent semper dictum nisl. Fusce scelerisque commodo ante, a dapibus risus interdum in. Etiam sit amet tincidunt lectus. Maecenas consequat consequat elit, sed gravida massa vestibulum id. Nullam lobortis lorem at augue convallis volutpat. Ut in sem vitae ligula ultrices pretium pharetra ut leo. Quisque ut dictum metus, eu vehicula neque.
+			Hola! mi nombre es Jose Contreras, tengo 23 años, soy un estudiante de Fisica, aunque tambien estudio programacion de forma tecnica y adquiriendo habilidades de forma "autodicta". Entre mis intereses intelectuales estan la programacion, la fisica, las matematicas y la filosofia. Tuve mi primer contacto con <strong>Python</strong> mediante un curso Introductorio en CISCO, luego afiance mis conocimientos con diversos problemas en varios portales como Exercism o HackRank. Posteriormente decidi especializarme en el desarrollo Web, mas especificamente con Django, tomando asi un bootcamp completo impartido por Codigo Facilito. Creo que he desarrollado una base solida y quiero ponerme a prueba en un empleo real para seguir aprendiendo. 
 		</p>
-		<a href="{% static 'portafolio/fisica.pdf' %}" class="btn btn-primary btn-lg rounded-0 my-3">Download CV</a>
+		<a href="{% static 'portafolio/CV-JoseContreras.pdf' %}" class="btn btn-primary btn-lg rounded-0 my-3">Download CV</a>
 	</div>
 </header>
 
 <div class="row my-4 text-center">
 
 	<h3>My Projects</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis ratione facilis totam sint, nihil! Cupiditate ut dicta officiis tempora, beatae dolorem dolore enim sint accusantium dignissimos ratione, excepturi natus!</p>
+	<p>En esta seccion veremos el catalogo de las aplicaciones que he desarrollado, con su respectivo link al deploy y una breve descripcion</p>
 
 	
 	{% for project in projects %}
